@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="user_input">17dp</dimen>
+    <dimen name="regular_text">14dp</dimen>
+    <dimen name="title">17dp</dimen>
+    <dimen name="terms_and_conditions">15dp</dimen>
+    <dimen name="thankyou">16dp</dimen>
+    <dimen name="candidate_name">19dp</dimen>
+</resources>

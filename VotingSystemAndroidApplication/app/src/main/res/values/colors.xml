@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#e4e5e7</color>
+    <color name="purple">#c045cf</color>
+    <color name="PrimaryDark">#593fb5</color>
+    <color name="blue">#fd3c71c6</color>
+    <color name="green">#FF6FA636</color>
+    <color name="red">#a6121b</color>
+    <color name="light_gray">#E6686868</color>
+    <color name="loading">#ad282828</color>
+    <color name="tshirtpurple">#ea1efc</color>
+    <color name="tshirtred">#ff2121</color>
+    <color name="tshirtgreen">#0eb700</color>
+</resources>

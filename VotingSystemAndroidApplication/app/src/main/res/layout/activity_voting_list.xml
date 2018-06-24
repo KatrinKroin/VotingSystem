@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:fitsSystemWindows="true"
+    tools:context="com.project.katri.votingsce.VotingList">
+
+    <include layout="@layout/include_list_viewpager"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:layout_weight="0.50">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:onClick="onBackClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/scearrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingRight="0dp"
+            android:layout_weight="0.50">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:onClick="LogOff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/scelogout" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="Currently there are no open elections for you. Check again later."
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:textColor="@color/white"/>
+
+</android.support.v4.widget.DrawerLayout>

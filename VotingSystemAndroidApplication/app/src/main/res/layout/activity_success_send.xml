@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckv"
+    android:layoutDirection="ltr"
+    android:paddingTop="0dp"
+    tools:context="com.project.katri.votingsce.SuccessSend">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@drawable/new_login_gradients"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="0dp">
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="0dp"
+                    android:clickable="true"
+                    android:onClick="onBackClick"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/scearrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0dp"
+                android:layout_weight="0.50"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingRight="0dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:clickable="true"
+                    android:onClick="LogOff"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/scelogout" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/resultImg"
+            android:layout_width="281dp"
+            android:layout_height="97dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/v" />
+
+        <TextView
+            android:id="@+id/hellouser"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="53dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/thankyou"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thankyou"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/success"
+            android:textColor="@color/white"
+            android:textSize="@dimen/thankyou"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/scevsline" />
+
+        <Button
+            android:id="@+id/votings"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/background_login"
+            android:clickable="true"
+            android:onClick="OtherVotings"
+            android:padding="12dp"
+            android:text="Back to open votes"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/user_input"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/thankyou"
+            tools:layout_editor_absoluteX="7dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

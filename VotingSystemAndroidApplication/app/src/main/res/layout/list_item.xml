@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="5dp"
+    android:paddingRight="15dp"
+    android:layout_marginTop="27dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layoutDirection="ltr"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_weight="0.50"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

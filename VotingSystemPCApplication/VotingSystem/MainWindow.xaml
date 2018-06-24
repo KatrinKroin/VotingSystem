@@ -1,0 +1,52 @@
+﻿<Window x:Class="VotingSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VotingSystem"
+        mc:Ignorable="d"
+        Title="Black Crystal Style" Height="672" Width="958" Background="{StaticResource LightBackground}">
+    <Grid Background="{x:Null}">
+        <Button Content="Focus" Height="41" HorizontalAlignment="Left" Margin="12,101,0,0" Name="Button1" VerticalAlignment="Top" Width="140" Foreground="White" />
+        <Button Content="Disabled" Height="39" HorizontalAlignment="Left" Margin="12,148,0,0" Name="Button2" VerticalAlignment="Top" Width="140" Foreground="White" IsEnabled="False" />
+        <TextBox Height="71" HorizontalAlignment="Left" Margin="165,85,0,0" Name="TextBox1" VerticalAlignment="Top" Width="175" Foreground="White" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" TextWrapping="Wrap" HorizontalScrollBarVisibility="Visible" />
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="165,162,0,0" Name="TextBox2" VerticalAlignment="Top" Width="175" Foreground="White" IsEnabled="False" Text="Disabled" VerticalScrollBarVisibility="Hidden" AcceptsReturn="True" HorizontalScrollBarVisibility="Hidden" />
+        <Button Content="Normal" Foreground="White" Height="41" HorizontalAlignment="Left" Margin="12,54,0,0" Name="Button3" VerticalAlignment="Top" Width="140"></Button>
+        <TextBox Foreground="White" Height="25" HorizontalAlignment="Left" Margin="165,54,0,0" Name="TextBox3" VerticalAlignment="Top" Width="175" VerticalScrollBarVisibility="Disabled" />
+        <Label Content="Button" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="Label1" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="White" FontWeight="bold" Width="140" />
+        <Label Content="TextBox" FontWeight="bold" Foreground="White" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="165,12,0,0" Name="Label2" VerticalAlignment="Top" Width="175" />
+        <ComboBox Height="25" HorizontalAlignment="Left" Margin="353,61,0,0" Name="ComboBox1" VerticalAlignment="Top" Width="181" IsEditable="True" />
+        <Label Content="ComboBox" FontWeight="bold" Foreground="White" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="353,11,0,0" Name="Label3" VerticalAlignment="Top" Width="175" />
+        <ComboBox Height="25" HorizontalAlignment="Left" Margin="353,107,0,0" Name="ComboBox2" VerticalAlignment="Top" Width="181" />
+        <ComboBox Height="25" HorizontalAlignment="Left" Margin="353,153,0,0" Name="ComboBox3" VerticalAlignment="Top" Width="181" IsEnabled="False" Text="Disabled" />
+        <DataGrid Name="grilla" AutoGenerateColumns="False" Margin="12,263,0,0" CanUserResizeColumns="True" ItemsSource="{Binding Path=tabla1}" GridLinesVisibility="None" HeadersVisibility="Column" Height="157" VerticalAlignment="Top" HorizontalAlignment="Left" Width="522">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Columna 1" Binding="{Binding Path=Columna1}" MinWidth="125"></DataGridTextColumn>
+                <DataGridTextColumn Header="Columna 2" Binding="{Binding Path=Columna2}" MinWidth="125"></DataGridTextColumn>
+                <DataGridTextColumn Header="Columna 3" Binding="{Binding Path=Columna3}" MinWidth="125"></DataGridTextColumn>
+                <DataGridTextColumn Header="Columna 4" Binding="{Binding Path=Columna4}" MinWidth="125"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="DATAGRID" FontWeight="bold" Foreground="White" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="12,229,0,0" Name="Label4" VerticalAlignment="Top" Width="522" />
+        <TabControl Height="157" HorizontalAlignment="Left" Margin="12,460,0,0" Name="TabControl1" VerticalAlignment="Top" Width="522">
+            <TabItem Header="Selected" Name="TabItem1">
+                <Grid />
+            </TabItem>
+            <TabItem Header="Disabled" IsEnabled="False" />
+            <TabItem Header="TabItem3" IsSelected="False" Selector.IsSelected="False" />
+            <TabItem Header="TabItem4" />
+        </TabControl>
+        <Label Content="TABCONTROL &amp; TABITEM" FontWeight="bold" Foreground="White" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="12,426,0,0" Name="Label5" VerticalAlignment="Top" Width="546" />
+        <ProgressBar HorizontalAlignment="Left" Margin="554,61,0,0" Name="ProgressBar1" Width="185" Height="25" VerticalAlignment="Top" Value="75" IsIndeterminate="False" Orientation="Horizontal" IsTabStop="False" />
+        <ProgressBar Height="25" HorizontalAlignment="Left" Margin="554,107,0,0" Name="ProgressBar2" VerticalAlignment="Top" Width="185" IsIndeterminate="True" />
+        <ProgressBar Height="25" HorizontalAlignment="Left" Margin="554,153,0,0" Name="ProgressBar3" VerticalAlignment="Top" Width="185" IsEnabled="False" />
+        <Label Content="ProgressBar" FontWeight="bold" Foreground="White" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="554,12,0,0" Name="Label7" VerticalAlignment="Top" Width="185" />
+        <Label Content="GROUPBOX" FontWeight="bold" Foreground="White" Height="28" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,229,12,0" Name="Label6" VerticalAlignment="Top" Width="370" />
+        <GroupBox Header="GroupBox1" Height="354" HorizontalAlignment="Left" Margin="554,263,0,0" Name="GroupBox1" VerticalAlignment="Top" Width="365" IsEnabled="True">
+            <Grid />
+        </GroupBox>
+        <ScrollBar Height="109" HorizontalAlignment="Left" Margin="895,54,0,0" Name="ScrollBar1" VerticalAlignment="Top" Width="18" />
+        <ScrollBar Height="18" HorizontalAlignment="Left" Margin="774,169,0,0" Name="ScrollBar2" VerticalAlignment="Top" Width="139" Orientation="Horizontal" />
+        <Label Content="ScrollBar" FontWeight="bold" Foreground="White" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="758,12,0,0" Name="Label8" VerticalAlignment="Top" Width="161" />
+    </Grid>
+</Window>

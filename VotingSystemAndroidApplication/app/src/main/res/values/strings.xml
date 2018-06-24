@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">VotingSCE</string>
+    <string name="action_settings">Settings</string>
+    <string name="password">Password</string>
+    <string name="Confirmation">Confirmation</string>
+    <string name="terms_of_use">Terms of use: The user authorized in the "Voting System" allowed to vote. The user familiar with the candidates and has no complains about them. The user acknowledge that his vote cannot be recalled once submitted, there will be no complains on this subject. </string>
+    <string name="success">Your vote was successfully received!\n Thank you!</string>
+    <string name="title_activity_remove_user">RemoveUser</string>
+    <string name="email">Email</string>
+    <string name="title_activity_login_menu">LoginMenu</string>
+
+
+    <string name="conditions">For purposes of convenience, the Code of Ethics applies to the male, but all that is said therein refers to women and men alike.</string>
+
+    <string name="condition_1"> The use of the application on its contents and services provided to you is subject to your acceptance of all the terms contained in these regulations.</string>
+    <string name="condition_2"> Your use of the Application and / or subscription to its services shall be deemed to be your agreement to these terms.</string>
+    <string name="condition_3"> The management of the application may suspend, block or stop the surfer\'s access to the service immediately if he violates the terms of the regulations.</string>
+    <string name="condition_4"> The management of the application may update the terms and conditions from time to time.</string>
+    <string name="condition_5"> The use of the application shall not be used for illegal purposes.</string>
+    <string name="condition_6"> The application is intended only for students of the Sami Shamoon College. On your login you declare that you are a full-time student at the Sami Shamoon College.</string>
+    <string name="condition_7"> The application may not be performed without the user’s consent and / or without his presence in front of the screen at the time of use and after all the terms of these regulations have been explained to him.</string>
+    <string name="condition_8"> The use of the application is for personal use only and the user is not authorized to transfer the user\'s permission to another person. A special obligation to be precise in all the personal details required for registration and for the ongoing contact with the subscriber.</string>
+    <string name="condition_9"> Any information that is false, insulting, defamatory, threatening, infringing on the privacy of others, pornographic, sexual, racist, or unlawful may not be published or transmitted through the app.</string>
+    <string name="condition_10"> You are solely responsible for the accuracy of the information you publish or transmit through the application. The management of the application does not accept any responsibility for the content published or transmitted among subscribers.</string>
+    <string name="condition_11"> The application may not be used commercially by way of advertising a service or a product.</string>
+    <string name="condition_12"> All votes you have made are at your own risk and you are aware that the management of the application will not modify / delete any details. It is highly recommended to carefully consider and verify the details, as well as to take maximum precautions before making the vote.</string>
+    <string name="condition_13"> The application management intends that the application and its services will be available always. At the same time, the application management is unable to commit to continuous availability without any mishaps and without "falls". In addition, the application\'s management is entitled to discontinue use of the application from time to time for its maintenance and organization. No monetary compensation will be granted due to malfunctions or breaks in service.</string>
+    <string name="condition_14"> All intellectual property rights and copyrights in connection with the Application are those of the Application\'s management.</string>
+    <string name="condition_15"> The management of the application is not responsible for the content of ads, "banners" or any advertising material in the application. Advertisers are solely responsible for this.</string>
+    <string name="condition_16"> The existence of links ("links") to other sites does not guarantee the contents of these sites in terms of their reliability, completeness, or in any other manner.</string>
+    <string name="condition_17"> The regulations shall apply to Israeli law. Jurisdiction over it to the competent courts in Tel Aviv / Beer Sheva.</string>
+
+
+    <string name="menu_night_mode">Night mode</string>
+    <string name="menu_night_mode_system">Follow system</string>
+    <string name="menu_night_mode_day">Day (always)</string>
+    <string name="menu_night_mode_night">Night (always)</string>
+    <string name="menu_night_mode_auto">Auto</string>
+</resources>
